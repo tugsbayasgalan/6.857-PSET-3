@@ -81,7 +81,7 @@ def invert_matrix(A):
 
 def multiply_element(element, times):
     new_element = FFieldElement(element.ffield, element.value)
-    for i in range(times+1):
+    for i in range(times):
         new_element = new_element.__mul__(new_element)
     return new_element
 
